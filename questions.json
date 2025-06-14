@@ -1,0 +1,604 @@
+{
+  "Exam MCQ": [
+    {
+      "question": "What is the time complexity of accessing the minimum element in a Min-Heap?",
+      "choices": ["A. O(1)", "B. O(log n)", "C. O(n)", "D. O(n log n)"],
+      "answer": "A",
+      "reason": "In a Min-Heap, the smallest element is always at the root, so accessing it takes constant time, O(1)."
+    },
+    {
+      "question": "Which traversal method of a Binary Search Tree returns the keys in sorted order?",
+      "choices": ["A. Preorder", "B. Postorder", "C. Inorder", "D. Level-order"],
+      "answer": "C",
+      "reason": "An inorder traversal visits the left subtree, then the root, and then the right subtree, yielding keys in ascending order for a BST."
+    },
+    {
+      "question": "In a hash table with open addressing and high load factor, which collision resolution strategy reduces clustering best?",
+      "choices": ["A. Linear Probing", "B. Quadratic Probing", "C. Double Hashing", "D. Chaining"],
+      "answer": "C",
+      "reason": "Double hashing uses a second hash function to reduce clustering and provides better distribution than linear or quadratic probing."
+    },
+    {
+      "question": "What is the best-case time complexity of Insertion Sort?",
+      "choices": ["A. O(n²)", "B. O(n log n)", "C. O(n)", "D. O(log n)"],
+      "answer": "C",
+      "reason": "When the input is already sorted, insertion sort performs only one comparison per element, leading to linear time, O(n)."
+    },
+    {
+      "question": "Which property must always be true for a valid AVL tree?",
+      "choices": ["A. All nodes have two children", "B. Balance factor of each node is 0", "C. Tree is a complete binary tree", "D. Balance factor of each node is −1, 0, or 1"],
+      "answer": "D",
+      "reason": "AVL trees maintain a balance factor of −1, 0, or 1 at each node to ensure the tree remains balanced."
+    },
+    {
+      "question": "Which of the following algorithms guarantees O(n log n) time in all cases?",
+      "choices": ["A. Quick Sort", "B. Merge Sort", "C. Insertion Sort", "D. Bubble Sort"],
+      "answer": "B",
+      "reason": "Merge sort consistently divides and merges the array in logarithmic depth and linear merge time, resulting in guaranteed O(n log n) time."
+    },
+    {
+      "question": "Which data structure is most appropriate for implementing a recursive function's call stack?",
+      "choices": ["A. Queue", "B. Heap", "C. Stack", "D. Linked List"],
+      "answer": "C",
+      "reason": "Recursion relies on a LIFO structure to track calls, which is best implemented using a stack."
+    },
+    {
+      "question": "What is the average time complexity of searching in a Binary Search Tree (BST)?",
+      "choices": ["A. O(n)", "B. O(log n)", "C. O(1)", "D. O(n log n)"],
+      "answer": "B",
+      "reason": "In an average-case (balanced BST), each comparison cuts the search space in half, resulting in O(log n) complexity."
+    },
+    {
+      "question": "What is the time complexity of finding the shortest path in an unweighted graph using BFS?",
+      "choices": ["A. O(V)", "B. O(E)", "C. O(V + E)", "D. O(VE)"],
+      "answer": "C",
+      "reason": "Breadth-First Search (BFS) visits all vertices and edges once, leading to a time complexity of O(V + E)."
+    },
+    {
+      "question": "Which operation in a max-heap requires O(log n) time?",
+      "choices": ["A. Access max element", "B. Insert an element", "C. Swap root and last element", "D. Traverse all nodes"],
+      "answer": "B",
+      "reason": "Insertion in a heap requires bubbling up the element to maintain the heap property, which takes O(log n) time."
+    },
+    {
+      "question": "Which sorting algorithm is **not stable** by default?",
+      "choices": ["A. Merge Sort", "B. Bubble Sort", "C. Insertion Sort", "D. Heap Sort"],
+      "answer": "D",
+      "reason": "Heap sort is not stable because it swaps elements across the tree without preserving input order of equal keys."
+    },
+    {
+      "question": "What is a key characteristic of dynamic programming?",
+      "choices": ["A. It only works with divide-and-conquer problems", "B. It avoids recursion", "C. It stores intermediate results to avoid redundant work", "D. It always uses greedy strategies"],
+      "answer": "C",
+      "reason": "Dynamic programming solves problems by breaking them into overlapping subproblems and storing their results."
+    },
+    {
+      "question": "Which data structure offers **O(1)** average-case time complexity for lookup operations?",
+      "choices": ["A. Linked List", "B. Stack", "C. Hash Table", "D. Queue"],
+      "answer": "C",
+      "reason": "Hash tables provide constant-time average-case access using efficient hashing functions."
+    },
+    {
+      "question": "Which graph traversal algorithm can be used for **topological sorting**?",
+      "choices": ["A. BFS", "B. DFS", "C. Dijkstra’s algorithm", "D. Prim’s algorithm"],
+      "answer": "B",
+      "reason": "Topological sorting is performed using a depth-first search by pushing nodes onto a stack after visiting all descendants."
+    },
+    {
+      "question": "What is the purpose of the 'cut property' in MST algorithms?",
+      "choices": ["A. To reduce number of edges", "B. To find critical paths", "C. To identify safe edges to add to the MST", "D. To determine node degrees"],
+      "answer": "C",
+      "reason": "The cut property ensures that the minimum-weight edge crossing any cut is a safe edge to include in the MST."
+    },
+    {
+      "question": "In AVL trees, what is the **maximum** allowed difference in heights between the left and right subtrees?",
+      "choices": ["A. 0", "B. 1", "C. 2", "D. No limit"],
+      "answer": "B",
+      "reason": "AVL trees maintain balance by ensuring that the height difference between subtrees is no more than 1."
+    },
+    {
+      "question": "Which of the following scenarios is best suited for **Radix Sort**?",
+      "choices": ["A. Sorting strings with variable lengths", "B. Sorting large integers with fixed-length digits", "C. Sorting floating-point numbers", "D. Sorting arbitrary objects with custom comparisons"],
+      "answer": "B",
+      "reason": "Radix sort is efficient for large datasets with uniform key lengths, like fixed-length integers or ZIP codes."
+    },
+    {
+      "question": "What is the recurrence relation for the **merge sort** algorithm?",
+      "choices": ["A. T(n) = T(n − 1) + n", "B. T(n) = T(n/2) + 1", "C. T(n) = 2T(n/2) + O(n)", "D. T(n) = T(n) + T(n−1)"],
+      "answer": "C",
+      "reason": "Merge sort divides the array in half and merges them in linear time, resulting in the recurrence T(n) = 2T(n/2) + O(n)."
+    },
+    {
+      "question": "Which condition must be true for a graph to contain an Eulerian circuit?",
+      "choices": ["A. All vertices have even degree", "B. Graph is a tree", "C. It contains no cycles", "D. The number of vertices is even"],
+      "answer": "A",
+      "reason": "A graph has an Eulerian circuit if and only if it is connected and every vertex has an even degree."
+    },
+    {
+      "question": "Which of the following has the highest growth rate?",
+      "choices": ["A. O(log n)", "B. O(n)", "C. O(n log n)", "D. O(2^n)"],
+      "answer": "D",
+      "reason": "Exponential time complexity O(2^n) grows faster than logarithmic, linear, and linearithmic complexities."
+    },
+    {
+      "question": "What is the purpose of 'heapify' in heap operations?",
+      "choices": ["A. To delete the root", "B. To find the minimum element", "C. To maintain the heap property", "D. To balance the binary tree"],
+      "answer": "C",
+      "reason": "The heapify operation ensures that a subtree rooted at a given index maintains the heap property."
+    },
+    {
+      "question": "What distinguishes a complete binary tree from a perfect binary tree?",
+      "choices": ["A. A complete tree has all nodes with two children", "B. A perfect tree is always balanced", "C. A complete tree is filled left to right", "D. A perfect tree allows missing leaves"],
+      "answer": "C",
+      "reason": "A complete binary tree fills all levels left to right, while a perfect binary tree is completely filled at all levels."
+    },
+    {
+      "question": "In dynamic programming, what is the LCS (Longest Common Subsequence) time complexity?",
+      "choices": ["A. O(n)", "B. O(n^2)", "C. O(n log n)", "D. O(2^n)"],
+      "answer": "B",
+      "reason": "Using bottom-up dynamic programming, LCS has a time complexity of O(mn) for strings of lengths m and n, typically simplified as O(n^2)."
+    },
+    {
+      "question": "Which sorting algorithm is based on the divide-and-conquer paradigm?",
+      "choices": ["A. Selection Sort", "B. Bubble Sort", "C. Quick Sort", "D. Insertion Sort"],
+      "answer": "C",
+      "reason": "Quick Sort works by selecting a pivot, partitioning the array, and recursively sorting the partitions, which follows divide-and-conquer."
+    },
+    {
+      "question": "What is a key property of adjacency lists in sparse graphs?",
+      "choices": ["A. They use O(V^2) space", "B. They are faster for dense graphs", "C. They reduce memory usage", "D. They are slower than adjacency matrices"],
+      "answer": "C",
+      "reason": "Adjacency lists are more memory-efficient for sparse graphs since they only store existing edges, using O(V + E) space."
+    },
+    {
+      "question": "Which case requires a double rotation in AVL trees?",
+      "choices": ["A. Left-Left (LL)", "B. Right-Right (RR)", "C. Left-Right (LR)", "D. Balanced"],
+      "answer": "C",
+      "reason": "A Left-Right case requires two rotations: a left rotation followed by a right rotation to restore AVL balance."
+    },
+    {
+      "question": "Which of the following is true about recursion?",
+      "choices": ["A. It always uses loops", "B. It is faster than iteration in all cases", "C. It must have a base case", "D. It requires more memory than iteration"],
+      "answer": "C",
+      "reason": "A recursive function must include a base case to terminate; otherwise, it leads to infinite recursion."
+    },
+    {
+      "question": "What is the role of 'slack' in project scheduling graphs?",
+      "choices": ["A. Measures graph density", "B. Represents the number of tasks", "C. Indicates time flexibility for tasks", "D. Determines task priority"],
+      "answer": "C",
+      "reason": "Slack time shows how much delay is allowed for a task without affecting the overall project duration."
+    },
+    {
+      "question": "Which of the following algorithms is most suitable for finding a Minimum Spanning Tree?",
+      "choices": ["A. Dijkstra’s Algorithm", "B. Floyd-Warshall Algorithm", "C. Kruskal’s Algorithm", "D. Bellman-Ford Algorithm"],
+      "answer": "C",
+      "reason": "Kruskal’s Algorithm is specifically designed to find a Minimum Spanning Tree by adding edges in increasing weight order without forming cycles."
+    },
+    {
+      "question": "What is the best-case time complexity of Quick Sort?",
+      "choices": ["A. O(n)", "B. O(n log n)", "C. O(n²)", "D. O(log n)"],
+      "answer": "B",
+      "reason": "Quick Sort achieves its best-case time complexity of O(n log n) when the pivot divides the array into roughly equal parts."
+    },
+    {
+      "question": "Which property must be maintained by a Binary Search Tree?",
+      "choices": ["A. All levels are filled", "B. Every left child is less than its parent", "C. No duplicate keys are allowed", "D. Tree is always balanced"],
+      "answer": "B",
+      "reason": "In a BST, the left subtree contains only values less than the node, and the right subtree only greater values."
+    },
+    {
+      "question": "Which of the following structures is most suitable for implementing a **breadth-first search**?",
+      "choices": ["A. Stack", "B. Heap", "C. Queue", "D. Priority Queue"],
+      "answer": "C",
+      "reason": "BFS uses a queue to process vertices in the order they are discovered, ensuring level-by-level exploration."
+    },
+    {
+      "question": "Which type of hashing strategy uses linked lists to handle collisions?",
+      "choices": ["A. Linear Probing", "B. Chaining", "C. Quadratic Probing", "D. Double Hashing"],
+      "answer": "B",
+      "reason": "Chaining handles collisions by storing multiple elements at the same index using a linked list or similar structure."
+    },
+    {
+      "question": "Which of the following algorithms is **non-comparison-based**?",
+      "choices": ["A. Merge Sort", "B. Quick Sort", "C. Radix Sort", "D. Heap Sort"],
+      "answer": "C",
+      "reason": "Radix Sort is a linear time sorting algorithm that works by processing digits or characters, not by comparing values."
+    },
+    {
+      "question": "What is the **load factor** in a hash table?",
+      "choices": ["A. Number of collisions per key", "B. Average bucket size", "C. Ratio of elements to table size", "D. Maximum probe length"],
+      "answer": "C",
+      "reason": "The load factor is defined as the number of elements divided by the size of the table and is used to measure how full the hash table is."
+    },
+    {
+      "question": "Which statement about dynamic programming is correct?",
+      "choices": ["A. It always uses recursion", "B. It is slower than brute force", "C. It avoids recomputation using memoization or tabulation", "D. It is the same as greedy algorithms"],
+      "answer": "C",
+      "reason": "Dynamic programming optimizes recursive solutions by storing subproblem results to avoid redundant work."
+    },
+    {
+      "question": "Which of the following has the **lowest time complexity** for building a heap from an unsorted array?",
+      "choices": ["A. O(n log n)", "B. O(n)", "C. O(log n)", "D. O(n²)"],
+      "answer": "B",
+      "reason": "The build-heap operation can be done in linear time, O(n), by calling heapify in a bottom-up manner."
+    },
+    {
+      "question": "Which sorting algorithm is **in-place but not stable**?",
+      "choices": ["A. Merge Sort", "B. Insertion Sort", "C. Quick Sort", "D. Bubble Sort"],
+      "answer": "C",
+      "reason": "Quick Sort is in-place because it does not require additional arrays, but it is not stable because it may reorder equal elements."
+    },
+    {
+      "question": "Which recurrence relation represents binary search?",
+      "choices": ["A. T(n) = T(n/2) + 1", "B. T(n) = T(n−1) + 1", "C. T(n) = 2T(n/2) + n", "D. T(n) = T(n) + T(n−1)"],
+      "answer": "A",
+      "reason": "Binary search divides the input in half with each recursive call, doing constant work outside the recursive call."
+    },
+    {
+      "question": "Which operation is most efficient in a **doubly linked list** compared to a singly linked list?",
+      "choices": ["A. Accessing the last node", "B. Inserting at the front", "C. Deleting the first node", "D. Traversing forward"],
+      "answer": "A",
+      "reason": "A doubly linked list allows efficient backward traversal and access to the last node using the `prev` pointer."
+    },
+    {
+      "question": "Which of these is a valid **base case** in recursion?",
+      "choices": ["A. return recurse(n−1)", "B. if (n == 0) return 1", "C. recurse(n/2)", "D. return recurse(n−1) + recurse(n−2)"],
+      "answer": "B",
+      "reason": "A base case must stop the recursion. 'if (n == 0) return 1' is a proper base case often used in factorial functions."
+    },
+    {
+      "question": "What is the **maximum** number of edges in a simple undirected graph with `n` vertices?",
+      "choices": ["A. n", "B. n(n−1)", "C. n²", "D. n(n−1)/2"],
+      "answer": "D",
+      "reason": "A simple undirected graph has no loops or multiple edges. The maximum number of edges is n(n−1)/2."
+    },
+    {
+      "question": "In an adjacency matrix of an undirected graph, the matrix is always:",
+      "choices": ["A. Triangular", "B. Asymmetric", "C. Sparse", "D. Symmetric"],
+      "answer": "D",
+      "reason": "Since the graph is undirected, an edge (u, v) is the same as (v, u), so the matrix is symmetric across the diagonal."
+    },
+    {
+      "question": "Which sorting algorithm performs best when the input is nearly sorted?",
+      "choices": ["A. Merge Sort", "B. Insertion Sort", "C. Selection Sort", "D. Heap Sort"],
+      "answer": "B",
+      "reason": "Insertion Sort can run in linear time O(n) when the input is already or nearly sorted."
+    },
+    {
+      "question": "What does a recursive function require to avoid infinite loops?",
+      "choices": ["A. An accumulator", "B. A return statement", "C. A loop condition", "D. A base case"],
+      "answer": "D",
+      "reason": "Without a base case, a recursive function would continue indefinitely, leading to a stack overflow."
+    },
+    {
+      "question": "Which statement about AVL rotations is correct?",
+      "choices": ["A. Only left rotations are needed", "B. Right rotations are used to fix RR cases", "C. Double rotations are needed for LR and RL cases", "D. LL case requires a left rotation"],
+      "answer": "C",
+      "reason": "In AVL trees, double rotations are needed to fix the imbalance in Left-Right (LR) and Right-Left (RL) cases."
+    },
+    {
+      "question": "What is the **main drawback** of using an adjacency matrix?",
+      "choices": ["A. Slow lookups", "B. Difficult edge addition", "C. Wastes space for sparse graphs", "D. Cannot store weights"],
+      "answer": "C",
+      "reason": "Adjacency matrices always use O(V²) space, which is inefficient for graphs with few edges (sparse graphs)."
+    },
+    {
+      "question": "Which type of graph must have a topological sort?",
+      "choices": ["A. Cyclic graph", "B. Undirected graph", "C. Directed graph with cycles", "D. Directed Acyclic Graph (DAG)"],
+      "answer": "D",
+      "reason": "Topological sorting is only valid for Directed Acyclic Graphs (DAGs), where dependencies flow in one direction without cycles."
+    },
+    {
+      "question": "Which of the following trees is height-balanced and guarantees O(log n) operations?",
+      "choices": ["A. Binary Search Tree", "B. AVL Tree", "C. Complete Binary Tree", "D. Splay Tree"],
+      "answer": "B",
+      "reason": "AVL trees maintain a strict balance condition ensuring height remains O(log n), guaranteeing logarithmic operations."
+    },
+    {
+      "question": "Which of the following algorithms works correctly only with non-negative edge weights?",
+      "choices": ["A. BFS", "B. DFS", "C. Dijkstra’s Algorithm", "D. Kruskal’s Algorithm"],
+      "answer": "C",
+      "reason": "Dijkstra’s algorithm assumes non-negative edge weights; it may return incorrect results otherwise."
+    },
+    {
+      "question": "In recursion, what is meant by the 'recursive case'?",
+      "choices": ["A. The final answer", "B. The part that reduces the problem size", "C. The loop that repeats", "D. The error handler"],
+      "answer": "B",
+      "reason": "The recursive case is where the function calls itself with a smaller or simpler input, working toward the base case."
+    },
+    {
+      "question": "Which type of graph traversal is more suitable for finding connected components in an undirected graph?",
+      "choices": ["A. BFS", "B. DFS", "C. Topological Sort", "D. Dijkstra's"],
+      "answer": "B",
+      "reason": "DFS is often used to explore and label entire connected components in an undirected graph."
+    },
+    {
+      "question": "What is the minimum number of nodes in a height-`h` AVL tree?",
+      "choices": ["A. h", "B. 2^h", "C. h + 1", "D. Fibonacci(h + 2) − 1"],
+      "answer": "D",
+      "reason": "The minimum number of nodes in an AVL tree of height h follows a Fibonacci-like recurrence: N(h) = N(h−1) + N(h−2) + 1."
+    },
+    {
+      "question": "Which sorting algorithm has a worst-case time complexity of O(n²) but can perform well on small or nearly sorted data?",
+      "choices": ["A. Merge Sort", "B. Insertion Sort", "C. Quick Sort", "D. Heap Sort"],
+      "answer": "B",
+      "reason": "Insertion Sort has worst-case O(n²), but is efficient on small or nearly sorted arrays due to low overhead."
+    },
+    {
+      "question": "Which data structure provides constant-time operations for insertion and deletion at both ends?",
+      "choices": ["A. Stack", "B. Queue", "C. Deque", "D. Array"],
+      "answer": "C",
+      "reason": "A deque (double-ended queue) allows insertion and deletion from both front and rear in O(1) time."
+    },
+    {
+      "question": "Which operation is typically used to restore the heap property after insertion?",
+      "choices": ["A. Heapify down", "B. Build-heap", "C. Bubble up (heapify up)", "D. Rehash"],
+      "answer": "C",
+      "reason": "After inserting into a heap, 'heapify up' is used to move the element up until the heap property is restored."
+    },
+    {
+      "question": "Which case in AVL trees requires a single right rotation?",
+      "choices": ["A. LL", "B. RR", "C. LR", "D. RL"],
+      "answer": "A",
+      "reason": "An LL imbalance is resolved with a single right rotation to restore balance in the tree."
+    },
+    {
+      "question": "What distinguishes Prim’s algorithm from Kruskal’s?",
+      "choices": ["A. It uses a union-find structure", "B. It always picks the global lightest edge", "C. It grows a single tree incrementally", "D. It sorts all edges first"],
+      "answer": "C",
+      "reason": "Prim’s algorithm builds the MST by growing one tree, adding the minimum edge connecting to new vertices."
+    },
+    {
+      "question": "Which of the following is a valid application of a stack?",
+      "choices": ["A. Level-order tree traversal", "B. Breadth-first search", "C. Depth-first search", "D. Scheduling tasks based on priority"],
+      "answer": "C",
+      "reason": "Depth-first search uses a stack (either explicitly or via recursion) to explore nodes deeply before backtracking."
+    },
+    {
+      "question": "Which hash collision resolution strategy may lead to **primary clustering**?",
+      "choices": ["A. Chaining", "B. Linear Probing", "C. Double Hashing", "D. Quadratic Probing"],
+      "answer": "B",
+      "reason": "Linear probing can cause primary clustering, where long blocks of filled slots increase the chance of further collisions."
+    },
+    {
+      "question": "Which of the following sorting algorithms is both **in-place** and **not stable**?",
+      "choices": ["A. Merge Sort", "B. Bubble Sort", "C. Heap Sort", "D. Insertion Sort"],
+      "answer": "C",
+      "reason": "Heap sort is in-place, but not stable, meaning it may change the relative order of equal elements."
+    },
+    {
+      "question": "In Dijkstra’s algorithm, what data structure is typically used to select the next vertex with the smallest tentative distance?",
+      "choices": ["A. Stack", "B. Queue", "C. Set", "D. Min-Heap (Priority Queue)"],
+      "answer": "D",
+      "reason": "Dijkstra's algorithm relies on a min-priority queue to efficiently extract the vertex with the smallest known distance."
+    },
+    {
+      "question": "Which sorting algorithm is the best choice for sorting data stored on disk?",
+      "choices": ["A. Quick Sort", "B. Heap Sort", "C. Merge Sort", "D. Insertion Sort"],
+      "answer": "C",
+      "reason": "Merge sort is ideal for external sorting (disk-based) because it accesses data sequentially and performs well with large data sets."
+    },
+    {
+      "question": "In dynamic programming, which property ensures that the problem can be broken into independent smaller subproblems?",
+      "choices": ["A. Memoization", "B. Optimal Substructure", "C. Greedy Choice", "D. Recurrence Relation"],
+      "answer": "B",
+      "reason": "Optimal substructure allows a problem to be solved by solving its subproblems and combining their solutions optimally."
+    },
+    {
+      "question": "Which of the following operations takes **O(1)** time in a circular queue implemented using an array?",
+      "choices": ["A. Enqueue", "B. Dequeue", "C. Checking fullness", "D. All of the above"],
+      "answer": "D",
+      "reason": "In a properly implemented circular queue, all these operations can be done in constant time with proper indexing."
+    },
+    {
+      "question": "Which statement about a Binary Search Tree is **not always true**?",
+      "choices": ["A. Inorder traversal gives sorted order", "B. Average search time is O(log n)", "C. Insertions can unbalance the tree", "D. All leaf nodes are at the same level"],
+      "answer": "D",
+      "reason": "Only in perfect or balanced trees are all leaves at the same level. BSTs can become unbalanced after inserts."
+    },
+    {
+      "question": "Which type of tree **self-adjusts** based on access frequency, moving accessed nodes to the root?",
+      "choices": ["A. AVL Tree", "B. Splay Tree", "C. Red-Black Tree", "D. Binary Heap"],
+      "answer": "B",
+      "reason": "Splay trees bring recently accessed nodes to the root to improve average access time for frequently used elements."
+    },
+    {
+      "question": "Which approach is commonly used to implement **topological sorting** in a DAG?",
+      "choices": ["A. BFS with a queue and in-degree counts", "B. Kruskal’s Algorithm", "C. Dijkstra’s Algorithm", "D. DFS with minimum spanning edges"],
+      "answer": "A",
+      "reason": "Kahn’s algorithm for topological sort uses BFS, a queue, and tracks in-degrees to sort vertices with no incoming edges."
+    },
+    {
+      "question": "What is the worst-case time complexity for searching an element in an unbalanced binary search tree?",
+      "choices": ["A. O(log n)", "B. O(n)", "C. O(n log n)", "D. O(1)"],
+      "answer": "B",
+      "reason": "If the tree is completely unbalanced (e.g., like a linked list), search takes linear time, O(n)."
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of a greedy algorithm?",
+      "choices": ["A. Makes locally optimal choices", "B. Builds the solution step by step", "C. Uses backtracking to undo decisions", "D. May not always yield global optimum"],
+      "answer": "C",
+      "reason": "Greedy algorithms do not use backtracking; they commit to the current local optimum without reconsidering past choices."
+    },
+    {
+      "question": "Which recurrence relation best represents the time complexity of the recursive Fibonacci algorithm?",
+      "choices": ["A. T(n) = T(n−1) + 1", "B. T(n) = 2T(n−1)", "C. T(n) = T(n−1) + T(n−2) + 1", "D. T(n) = T(n/2) + n"],
+      "answer": "C",
+      "reason": "Each call to Fibonacci(n) results in two further recursive calls: Fibonacci(n−1) and Fibonacci(n−2), plus constant overhead."
+    },
+    {
+      "question": "In an undirected graph, the sum of all vertex degrees is equal to:",
+      "choices": ["A. Number of vertices", "B. Twice the number of edges", "C. Total edge weight", "D. Number of self-loops"],
+      "answer": "B",
+      "reason": "In undirected graphs, each edge contributes 1 to the degree of two vertices, so the total degree sum is 2 × number of edges."
+    },
+    {
+      "question": "Which of the following can lead to **secondary clustering** in hashing?",
+      "choices": ["A. Linear Probing", "B. Quadratic Probing", "C. Chaining", "D. Double Hashing"],
+      "answer": "B",
+      "reason": "Quadratic probing avoids primary clustering but can still lead to secondary clustering, where keys hash to the same probe sequence."
+    },
+    {
+      "question": "Which sorting algorithm has the **same** time complexity in best, average, and worst cases?",
+      "choices": ["A. Quick Sort", "B. Merge Sort", "C. Insertion Sort", "D. Shell Sort"],
+      "answer": "B",
+      "reason": "Merge Sort consistently runs in O(n log n) time, regardless of input order, due to its divide-and-conquer approach."
+    },
+    {
+      "question": "What is the minimum number of edges required to make a connected graph with `n` nodes?",
+      "choices": ["A. n", "B. n−1", "C. n+1", "D. log n"],
+      "answer": "B",
+      "reason": "A connected graph with the fewest edges is a tree, which has exactly n−1 edges."
+    },
+    {
+      "question": "Which data structure is best suited for checking whether a string of parentheses is balanced?",
+      "choices": ["A. Queue", "B. Stack", "C. Hash Table", "D. Heap"],
+      "answer": "B",
+      "reason": "Stacks are ideal for matching opening and closing brackets due to their LIFO behavior."
+    },
+    {
+      "question": "Which technique is used in **divide and conquer** algorithms?",
+      "choices": ["A. Solving subproblems independently", "B. Dynamic programming with memoization", "C. Iterating over a data structure", "D. Traversing a graph level by level"],
+      "answer": "A",
+      "reason": "Divide and conquer splits the problem into smaller subproblems, solves each independently, and combines the results."
+    },
+    {
+      "question": "Which traversal method is best for **printing all leaf nodes** of a binary tree?",
+      "choices": ["A. Inorder", "B. Preorder", "C. Postorder", "D. Any traversal that visits all nodes"],
+      "answer": "D",
+      "reason": "Any complete traversal (inorder, preorder, postorder) will visit all nodes, including the leaves, allowing you to detect and print them."
+    },
+    {
+      "question": "Which data structure is typically used to implement a **priority queue**?",
+      "choices": ["A. Stack", "B. Queue", "C. Binary Heap", "D. Hash Table"],
+      "answer": "C",
+      "reason": "A binary heap is the most efficient way to implement a priority queue, supporting fast insertions and deletions of highest-priority elements."
+    },
+    {
+      "question": "Which tree traversal is most appropriate for evaluating an expression tree?",
+      "choices": ["A. Inorder", "B. Preorder", "C. Postorder", "D. Level-order"],
+      "answer": "C",
+      "reason": "Postorder traversal evaluates the left and right subtrees before applying the operator at the root, which is ideal for expression trees."
+    },
+    {
+      "question": "Which condition must be met for a **hash table using open addressing** to guarantee finding an element (if present)?",
+      "choices": ["A. Table is half full", "B. Table size is prime", "C. Load factor < 1", "D. Hash function is linear"],
+      "answer": "C",
+      "reason": "In open addressing, if the load factor reaches 1, the table is full and new insertions or successful searches may fail."
+    },
+    {
+      "question": "Which of the following functions grows **faster** than all others asymptotically?",
+      "choices": ["A. log n", "B. n", "C. n log n", "D. 2^n"],
+      "answer": "D",
+      "reason": "Exponential growth (2^n) surpasses logarithmic, linear, and linearithmic growth as n increases."
+    },
+    {
+      "question": "What is the space complexity of recursive Fibonacci without memoization?",
+      "choices": ["A. O(1)", "B. O(n)", "C. O(log n)", "D. O(2^n)"],
+      "answer": "B",
+      "reason": "Although the time is exponential, the space complexity is O(n) due to the call stack depth for recursive calls."
+    },
+    {
+      "question": "Which algorithm can be used to find the shortest path from a source to all vertices in a **weighted DAG**?",
+      "choices": ["A. BFS", "B. DFS", "C. Dijkstra’s Algorithm", "D. Topological Sort + Relaxation"],
+      "answer": "D",
+      "reason": "For weighted DAGs, topological sort followed by edge relaxation gives an efficient O(V + E) shortest path algorithm."
+    },
+    {
+      "question": "Which of the following is **not** a feature of merge sort?",
+      "choices": ["A. Stable", "B. In-place", "C. Divide-and-conquer", "D. Consistent time complexity"],
+      "answer": "B",
+      "reason": "Merge sort requires additional space for merging, so it is not an in-place sorting algorithm."
+    },
+    {
+      "question": "Which condition leads to **worst-case** time complexity in Quick Sort?",
+      "choices": ["A. Choosing middle as pivot", "B. Equal partitioning", "C. Always picking max or min as pivot", "D. Random pivot selection"],
+      "answer": "C",
+      "reason": "If the pivot is always the smallest or largest element, the partitions are unbalanced, resulting in O(n²) time."
+    },
+    {
+      "question": "What is the height of a complete binary tree with `n` nodes?",
+      "choices": ["A. log₂(n)", "B. n", "C. √n", "D. n/2"],
+      "answer": "A",
+      "reason": "A complete binary tree has minimal height and the height is ⌊log₂(n)⌋."
+    },
+    {
+      "question": "Which of the following statements about DFS traversal is **true**?",
+      "choices": ["A. DFS uses a queue", "B. DFS finds the shortest path", "C. DFS may visit deeper nodes before siblings", "D. DFS classifies edges as tree and forward only"],
+      "answer": "C",
+      "reason": "DFS explores depth before breadth, meaning it visits deeper nodes before their siblings."
+    },
+    {
+      "question": "What is the output of inorder traversal of a binary search tree?",
+      "choices": ["A. Postfix expression", "B. Nodes in sorted order", "C. Level-wise order", "D. Height of the tree"],
+      "answer": "B",
+      "reason": "Inorder traversal of a BST yields nodes in ascending sorted order."
+    },
+    {
+      "question": "Which of the following ensures the **best average performance** for hash table operations?",
+      "choices": ["A. High load factor", "B. Linear probing", "C. Good hash function and low load factor", "D. Rehashing after every insertion"],
+      "answer": "C",
+      "reason": "A good hash function combined with a low load factor ensures fewer collisions and thus efficient O(1) average-case performance."
+    },
+    {
+      "question": "Which of the following problems is best solved using dynamic programming?",
+      "choices": ["A. Linear search", "B. Binary search", "C. Fibonacci sequence", "D. Finding a prime number"],
+      "answer": "C",
+      "reason": "Fibonacci has overlapping subproblems and optimal substructure, making it suitable for DP with memoization or bottom-up approaches."
+    },
+    {
+      "question": "What is the time complexity of the dynamic programming approach to computing the Longest Common Subsequence (LCS) of two strings of length n?",
+      "choices": ["A. O(n)", "B. O(n log n)", "C. O(n²)", "D. O(2^n)"],
+      "answer": "C",
+      "reason": "The DP table for LCS has dimensions n × n and requires filling all entries, resulting in O(n²) time."
+    },
+    {
+      "question": "Which property is required for a problem to be solved using dynamic programming?",
+      "choices": ["A. Greedy choice property", "B. Divide-and-conquer only", "C. Optimal substructure and overlapping subproblems", "D. Polynomial runtime"],
+      "answer": "C",
+      "reason": "DP applies to problems where subproblems overlap and their solutions can be reused in an optimal way."
+    },
+    {
+      "question": "In project scheduling using the Critical Path Method (CPM), the critical path is:",
+      "choices": ["A. The path with the most slack", "B. The shortest duration path", "C. The path where delay causes project delay", "D. The path with the fewest tasks"],
+      "answer": "C",
+      "reason": "Any delay in the critical path delays the whole project; it is the longest duration path through the project network."
+    },
+    {
+      "question": "In an AON (Activity-On-Node) graph, what do the nodes represent?",
+      "choices": ["A. Time durations", "B. Tasks or activities", "C. Dependencies", "D. Deadlines"],
+      "answer": "B",
+      "reason": "In AON graphs, nodes represent tasks or activities; edges show dependencies."
+    },
+    {
+      "question": "What does 'slack' mean in project scheduling?",
+      "choices": ["A. Tasks that can be removed", "B. Time an activity can be delayed without delaying the project", "C. The sum of all critical tasks", "D. Time remaining after the project ends"],
+      "answer": "B",
+      "reason": "Slack is the amount of time a task can be delayed without affecting the project's end date."
+    },
+    {
+      "question": "Which of the following best describes **proof by induction**?",
+      "choices": ["A. Testing a formula for random values", "B. Proving a base case and assuming n to prove n+1", "C. Solving recursively", "D. Rewriting an algorithm using loops"],
+      "answer": "B",
+      "reason": "Inductive proof involves two steps: proving the base case and using it to prove the next case."
+    },
+    {
+      "question": "Which recurrence relation corresponds to the time complexity of merge sort?",
+      "choices": ["A. T(n) = T(n−1) + 1", "B. T(n) = 2T(n/2) + O(n)", "C. T(n) = T(n/2) + 1", "D. T(n) = T(n) + T(n−1)"],
+      "answer": "B",
+      "reason": "Merge sort divides the array in half, sorts both halves, and merges them in O(n) time."
+    },
+    {
+      "question": "What is the base case when proving the formula ∑(i=1 to n) i = n(n+1)/2 by induction?",
+      "choices": ["A. i = 0", "B. n = 1", "C. n = 0", "D. n = 2"],
+      "answer": "B",
+      "reason": "The base case usually starts with n = 1 to confirm the formula works for the smallest input."
+    },
+    {
+      "question": "Which of the following is true about memoization in dynamic programming?",
+      "choices": ["A. It increases time complexity", "B. It stores results of subproblems to avoid recomputation", "C. It works only for graphs", "D. It replaces recursion entirely"],
+      "answer": "B",
+      "reason": "Memoization avoids repeated work by caching results of recursive subproblems, improving performance."
+    }
+  ]
+}
