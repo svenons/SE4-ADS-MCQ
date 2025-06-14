@@ -20,7 +20,7 @@ The MCQs in this repository are independently generated based on the content of 
 
 ## 🌐 Online App
 
-You can access the MCQ repository as an interactive web app here: EDIT-LATER
+You can access the MCQ repository as an interactive web app here: 👉 [🔗 Open the SE4 Algorithms & Data Structures MCQ App](https://se4-ads.streamlit.app)
 
 ## ⚠️ Takedown Notice
 
